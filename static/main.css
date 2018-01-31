@@ -1,0 +1,112 @@
+.navbar-custom {
+	border-radius:0px;
+	margin-bottom: 0px;
+}
+
+.modal-backdrop {
+    z-index: -1;
+}
+/*
+body {
+	background: url(https://pbs.twimg.com/media/C5QmvjVUEAEgbh4.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+*/
+
+body {
+	padding-top: 10px;
+	height: 100%;
+}
+
+#main-container {
+	border: 1px solid black;
+	background: url(https://pbs.twimg.com/media/C5QmvjVUEAEgbh4.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+#login_container {
+		margin-top: 20px;
+		padding: 20px;
+		width: 500px;
+		height: 500px;
+		text-align: center;
+}
+#login_container form {
+
+}
+
+#login_container input {
+		width: 50%;
+		display: block;
+		margin-bottom: 5px;
+		margin: 5px auto;
+}
+
+#register_container {
+	border: 1px solid black;
+	border-radius: 0.5;
+	margin-top: 100px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+#register_container input {
+	z-index: 100;
+	display: block;
+	margin: 10px auto;
+
+}
+
+.jumbotron.vertical-center {
+  margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
+  margin-top: 0;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for vh unit */
+  min-height: 100vh; /* You might also want to use
+                        'height' property instead.
+
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
