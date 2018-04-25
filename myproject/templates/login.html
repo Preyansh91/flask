@@ -1,0 +1,15 @@
+{% extends "header.html" %}
+{% block body %}
+
+	<div id="login_container" class="container">
+		<br>
+		<h4>Please Login:</h4>
+		<br>
+		<form id="login-page-form" action="" class="form-inline" method="post">
+			<input id = "login-user" type="text" class="form-control" placeholder = "Username" name="username" value="">
+			<input id = "login-passwd" type="password" class="form-control" placeholder = "Password" name="password" value="">
+			<input class="btn btn-default" type="submit" value="Login">
+		</form>
+	</div>
+
+{% endblock %}

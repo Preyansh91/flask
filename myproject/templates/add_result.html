@@ -1,0 +1,35 @@
+{% extends "header.html" %}
+{% block body %}
+<div id="add-results-container" class="container">
+  <br>
+  <h4>Please enter the number of tests to create the results table:</h4>
+  <form id="add-results-page-form" action="" class="form-inline" method="post">
+    <input id = "number-of-tests" type="text" class="form-control" placeholder = "Number of tests" name="number-of-tests" value="Number of tests" /><p id="add-result-err"></p>
+    <input class="btn btn-primary" type="submit" value="Create Table">
+  </form>
+</div>
+
+<div id='results-details' class="container">
+  <br>
+  <h4>Enter the test details:</h4>
+  <form id="add-result-details-form" action="" class ="form-inline" method="post">
+    <input id="description" type="text" class="form-control" placeholder="Desciption" name="description" />
+    <br>
+    <input id="bigip-input" list="bigiplist" class="form-control" placeholder="bigip"/>
+    <datalist id='bigiplist'>
+    </datalist>
+
+    <input id="release-input" list="releaselist" class="form-control" placeholder="release"/>
+    <datalist id='releaselist'>
+    </datalist>
+
+    <input id="project-input" list="projectlist" class="form-control" placeholder="project"/>
+    <datalist id='projectlist'>
+    </datalist>
+
+    <div id="divTable" class="container">
+    </div>
+    <input id="result-submit-button" class="btn btn-primary" type="submit" value="Add Result" />
+  </form>
+</div>
+{% endblock %}
